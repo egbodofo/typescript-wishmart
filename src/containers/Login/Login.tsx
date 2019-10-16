@@ -39,7 +39,6 @@ export const Login = (props: {
 
   return (
     <>
-      <Navigation />
       <MDBContainer className="px-5">
         <MDBRow className="d-flex justify-content-center">
           <MDBCol className="card mt-3" sm="12" md="8" lg="6">
@@ -76,7 +75,6 @@ export const Login = (props: {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <Footer />
     </>
   );
 };

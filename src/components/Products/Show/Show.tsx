@@ -42,9 +42,7 @@ const Products = () => {
 
   return (
     <>
-      <Navigation />
       <MDBContainer className="mt-3 text-center">{tabRow()}</MDBContainer>
-      <Footer />
     </>
   );
 };

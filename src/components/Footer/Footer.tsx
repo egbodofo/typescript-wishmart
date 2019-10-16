@@ -2,15 +2,9 @@ import React from 'react';
 import { MDBContainer, MDBFooter } from 'mdbreact';
 import styled from 'styled-components';
 
-const Foot = styled(MDBFooter)`
-  position: relative;
-  width: 100%;
-  background-color: #3f51b5;
-`;
-
 const Footer = () => {
   return (
-    <Foot className="font-small pt-4 mt-4">
+    <MDBFooter className="font-small mt-3" id="MyFoot">
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright:{' '}
@@ -21,7 +15,7 @@ const Footer = () => {
           </p>
         </MDBContainer>
       </div>
-    </Foot>
+    </MDBFooter>
   );
 };
 

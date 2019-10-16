@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from '../../axios-orders';
 import Body from './Body/Body';
-import Footer from '../Footer/Footer';
 import Link from 'next/link';
 import cookie from 'js-cookie';
 import {
@@ -12,7 +11,6 @@ import {
   MDBCol,
   MDBIcon,
 } from 'mdbreact';
-import { Navigation } from '../Navigation/Navigation';
 
 const Products = () => {
   const [product, setProduct] = useState<[]>([]);
@@ -54,8 +52,7 @@ const Products = () => {
 
   return (
     <>
-      <Navigation />
-      <MDBContainer className="mt-3 text-center">
+      <MDBContainer className="mt-3 text-center mb-5">
         <MDBRow>
           <MDBCol>
             <MDBJumbotron className="px-2 mt-2">
@@ -68,7 +65,6 @@ const Products = () => {
 
         <MDBRow>{tabRow()}</MDBRow>
       </MDBContainer>
-      <Footer />
     </>
   );
 };

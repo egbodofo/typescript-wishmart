@@ -4,8 +4,6 @@ import Router from 'next/router';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput } from 'mdbreact';
-import Navigation from '../../components/Navigation/Navigation';
-import Footer from '../../components/Footer/Footer';
 
 export const Add = (props: {
   newProduct: (arg0: {
@@ -57,7 +55,6 @@ export const Add = (props: {
 
   return (
     <>
-      <Navigation />
       <MDBContainer className="px-5">
         <MDBRow className="d-flex justify-content-center">
           <MDBCol className="card mt-3" sm="12" md="8" lg="6">
@@ -129,7 +126,6 @@ export const Add = (props: {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <Footer />
     </>
   );
 };

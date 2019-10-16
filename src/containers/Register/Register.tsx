@@ -68,7 +68,6 @@ export const Register = (props: {
 
   return (
     <>
-      <Navigation />
       <MDBContainer>
         <MDBRow className="d-flex justify-content-center mb-5 py-3 px-5">
           <MDBCol className="mt-3" sm="12" md="8" lg="6">
@@ -147,7 +146,6 @@ export const Register = (props: {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <Footer />
     </>
   );
 };

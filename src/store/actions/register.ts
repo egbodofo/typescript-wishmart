@@ -1,5 +1,6 @@
 import axios from '../../axios-orders';
 import setAuthorizationToken from '../../utils/setAuthorization';
+// import jwtDecode from 'jwt-decode';
 import jwt from 'jsonwebtoken';
 import { SET_CURRENT_USER } from './types';
 import cookie from 'js-cookie';

@@ -2,8 +2,6 @@ import React, { useState, useEffect, FormEvent, SyntheticEvent } from 'react';
 import axios from '../../../axios-orders';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput } from 'mdbreact';
 import Router from 'next/router';
-import Navigation from '../../Navigation/Navigation';
-import Footer from '../../Footer/Footer';
 import { Showprops } from '../../../lib/intes-types';
 import cookie from 'js-cookie';
 
@@ -61,7 +59,6 @@ export const Edit = ({ id }: Showprops) => {
 
   return (
     <>
-      <Navigation />
       <MDBContainer className="px-5">
         <MDBRow className="d-flex justify-content-center">
           <MDBCol className="card mt-5" xl="6">
@@ -138,7 +135,6 @@ export const Edit = ({ id }: Showprops) => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <Footer />
     </>
   );
 };

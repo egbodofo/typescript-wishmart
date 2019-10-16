@@ -7,6 +7,7 @@ import App, { Container } from 'next/app';
 import rootReducer from '../src/utils/rootReducer';
 import Head from 'next/head';
 import withRedux from 'next-redux-wrapper';
+import Layout from '../src/components/Layouts/Layout';
 
 const stored = () =>
   createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
@@ -33,8 +34,31 @@ class MyApp extends App<Props> {
         </Head>
 
         <Provider store={store}>
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </Provider>
+
+        <style global jsx>{`
+          html {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-height: 100%;
+          }
+          body {
+            flex: 1;
+            margin: 0 0 100px;
+          }
+          #MyFoot {
+            background-color: #007bff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            overflow: hidden;
+          }
+        `}</style>
       </>
     );
   }

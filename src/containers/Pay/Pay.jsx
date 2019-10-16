@@ -1,13 +1,10 @@
 import React from 'react';
 
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBCardImage } from 'mdbreact';
-import Footer from '../../components/Footer/Footer';
-import Navigation from '../../components/Navigation/Navigation';
 
 const CheckOut = () => {
   return (
     <>
-      <Navigation />
       <MDBContainer>
         <MDBRow className="d-flex justify-content-center px-2">
           <MDBCol className="card mt-3" sm="12" md="8" lg="6">
@@ -29,7 +26,6 @@ const CheckOut = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <Footer />
     </>
   );
 };

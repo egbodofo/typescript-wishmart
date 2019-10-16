@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Footer from '../src/components/Footer/Footer';
 import Home from '../src/components/Home/Home';
-import Navigation from '../src/components/Navigation/Navigation';
 
 class Index extends Component {
   static getInitialProps({ store, isServer, pathname, query }) {
@@ -12,9 +10,7 @@ class Index extends Component {
   render() {
     return (
       <div>
-        <Navigation />
         <Home />
-        <Footer />
       </div>
     );
   }
