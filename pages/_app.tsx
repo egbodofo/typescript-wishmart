@@ -51,7 +51,7 @@ class MyApp extends App<Props> {
             margin: 0 0 100px;
           }
           #MyFoot {
-            background-color: #007bff;
+            background-color: #0b3dc1;
             position: absolute;
             bottom: 0;
             width: 100%;
