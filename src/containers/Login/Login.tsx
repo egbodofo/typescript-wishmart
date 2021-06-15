@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import Router from 'next/router';
 import { login } from '../../store/actions/login';
 import { connect } from 'react-redux';
-import Navigation from '../../components/Navigation/Navigation';
-import Footer from '../../components/Footer/Footer';
 import cookie from 'js-cookie';
 
 export const Login = (props: {

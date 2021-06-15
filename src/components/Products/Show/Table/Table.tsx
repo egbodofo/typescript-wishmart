@@ -11,7 +11,7 @@ const Img = styled.img`
   max-width: 280px;
   max-height: auto;
   min-width: 220px;
-  min-height: 220px
+  min-height: 220px;
   border-radius: 3%;
   -webkit-box-shadow: 0px 3px 38px -8px rgba(3, 23, 247, 0.88);
   -moz-box-shadow: 0px 3px 38px -8px rgba(3, 23, 247, 0.88);

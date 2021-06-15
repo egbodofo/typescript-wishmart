@@ -3,8 +3,6 @@ import axios from '../../../axios-orders';
 import { MDBContainer } from 'mdbreact';
 import Table from './Table/Table';
 import { useRouter } from 'next/router';
-import Navigation from '../../Navigation/Navigation';
-import Footer from '../../Footer/Footer';
 import cookie from 'js-cookie';
 import { IProduct, IUser } from '../../../lib/intes-types';
 
